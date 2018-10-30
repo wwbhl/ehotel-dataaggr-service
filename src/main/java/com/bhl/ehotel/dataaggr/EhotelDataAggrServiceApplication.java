@@ -25,7 +25,7 @@ public class EhotelDataAggrServiceApplication {
 		config.setMaxIdle(5);
 		config.setMaxWaitMillis(1000 * 10); 
 		config.setTestOnBorrow(true);
-		return new JedisPool(config, "10.0.0.3", 1111);
+		return new JedisPool(config, "10.0.0.3", 6379);
 	}
 	
 }
